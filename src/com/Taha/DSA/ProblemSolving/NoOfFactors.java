@@ -2,7 +2,7 @@ package com.Taha.DSA.ProblemSolving;
 
 import java.util.Scanner;
 
-public class ProblemSolving {
+public class NoOfFactors {
 
     //Find the no. of factors
 
@@ -79,25 +79,25 @@ public class ProblemSolving {
 
 //    But This Solution is not suitable for perfect sqrt no.
     /*
-    * such as n=36
-    *       i               n/i             n=36
-    *       1        <       36      =       36
-    *       2        <       18      =       36
-    *       3        <       12      =       36
-    *       4        <       9       =       36
-    * -----------------------------------------------
-    *       6        =       6       =       36
-    * -----------------------------------------------
-    *       9        >       4       =       36
-    *       12       >       3       =       36
-    *       18       >       2       =       36
-    *       36       >       1       =       36
-    *
-    *   therefore i*i<=n
-    *
-    *   we can see the repetition like before but 6 * 6 = 36 we count is a  2 but it is actually 1 factor
-    *
-    * */
+     * such as n=36
+     *       i               n/i             n=36
+     *       1        <       36      =       36
+     *       2        <       18      =       36
+     *       3        <       12      =       36
+     *       4        <       9       =       36
+     * -----------------------------------------------
+     *       6        =       6       =       36
+     * -----------------------------------------------
+     *       9        >       4       =       36
+     *       12       >       3       =       36
+     *       18       >       2       =       36
+     *       36       >       1       =       36
+     *
+     *   therefore i*i<=n
+     *
+     *   we can see the repetition like before but 6 * 6 = 36 we count is a  2 but it is actually 1 factor
+     *
+     * */
 
     public static int noOfFactors(int n){
         int count =0;
@@ -116,14 +116,11 @@ public class ProblemSolving {
         return count;
     }
 
-
-    public static void main(String ... args){
+    public static void main(String... args){
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter The Number:");
         int n=sc.nextInt();
         System.out.println(noOfFactors(n));
     }
-
-
 
 }
