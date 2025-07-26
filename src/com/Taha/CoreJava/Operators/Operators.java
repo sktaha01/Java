@@ -102,6 +102,21 @@ public class Operators {
             System.out.println("You Are Fail!");
         }
 
+
+        int n=223;
+        int sum=0;
+        int multiply=1;
+        while(n>0){
+            int last= n%10;
+            sum=sum+last;
+            multiply=multiply*last;
+            n=n/10;
+        }
+
+        int deference= multiply-sum;
+        System.out.println(deference);
+
+
     }
 
 }
