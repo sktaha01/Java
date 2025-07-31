@@ -21,7 +21,7 @@ Last Index = n-1;
 
 //    Create an array of size 5 and values 10,20,30,40,50
 
-    public static void main(String... args){
+    public static void main(String... args) {
 
 //        Way 1
 
@@ -46,7 +46,7 @@ Last Index = n-1;
 //        }
 //        System.out.println(sum);
 
-    // Find The Max Of the Array
+        // Find The Max Of the Array
 //        Scanner sc = new Scanner(System.in);
 //        System.out.println("Enter The Size Of Array:");
 //        int n = sc.nextInt();
@@ -64,25 +64,6 @@ Last Index = n-1;
 //       }
 //        System.out.println("The Max Of Array: "+max);
 //
-
-    int [] arr = {10,20,30,40,50,60,70,80,90,100};
-
-    for(int i = 0 ; i< arr.length;i++){
-        if (arr[i]!=arr[arr.length-1]){
-        swap(arr[i],(arr[arr.length-i]));
-        }
-        else{
-            break;
-        }
-    }
-    for (int i =0 ; i<arr.length;i++){
-        System.out.print(arr[i]);
-    }
-    }
-    public static void swap(int a,int b){
-        int temp= a;
-        a=b;
-        b= temp;
     }
 
 }
